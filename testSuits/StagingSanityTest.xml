@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel = "tests">
+
+<!-- <suite name="Suite" > -->
+  <!-- <test thread-count="5" name="Test"> -->
+  
+  <listeners>
+    <!-- <listener class-name="com.eatsure.sampletest.Listeners"/> -->
+    <listener class-name="com.eatsure.listener.Listeners"/>
+    <!-- <listener class-name="com.eatsure.listener.TestListenerClass"/> -->
+  
+  </listeners>
+  
+  <test  name="D2C_VR_ESWEB_SanityE2Eflow_Staging_Condition">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_SanityE2Eflow_Staging_Condition"/>
+      </classes>
+   </test>
+   <test  name="D2C_VR_BBWEB_SanityE2Eflow_Staging_Condition">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_BBWEB_SanityE2Eflow_Staging_Condition"/>
+      </classes>
+   </test>
+   <test  name="D2C_VR_OSWEB_SanityE2Eflow_Staging_Condition">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_OSWEB_SanityE2Eflow_Staging_Condition"/>
+      </classes>
+   </test> 
+  <!-- For comment the .xml file CTRL_SHIFT_/ -->
+ <!--  <test  name="Locality Page Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.LocalityPageTest"/>
+      </classes>
+   </test>
+    
+   <test  name="Home Page Test">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.eatsure.sampletest.HomePageTest"/>
+    </classes>
+    
+  </test> Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel = "tests">
+
+<!-- <suite name="Suite" > -->
+  <!-- <test thread-count="5" name="Test"> -->
+  
+  <listeners>
+    <!-- <listener class-name="com.eatsure.sampletest.Listeners"/> -->
+    <listener class-name="com.eatsure.listener.Listeners"/>
+    <!-- <listener class-name="com.eatsure.listener.TestListenerClass"/> -->
+  
+  </listeners>
+  
+  <test  name="D2C_VR_ESWEB_Regressionflow_LandingPage">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_Regressionflow_LandingPage"/>
+      </classes>
+   </test>
+   
+   <test  name="D2C_VR_ESWEB_Regression_CuisinesPage">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_Regression_CuisinesPage"/>
+      </classes>
+   </test>
+   
+   <test  name="D2C_VR_ESWEB_RegressionFlow_PDPPage">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_RegressionFlow_PDPPage"/>
+      </classes>
+   </test> 
+   
+    <test  name="D2C_VR_ESWEB_Regression_cart">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_Regression_cart"/>
+      </classes>
+   </test> 
+   
+    <test  name="D2C_VR_ESWEB_Regression_AddressTest">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_Regression_AddressTest"/>
+      </classes>
+   </test> 
+   
+    <test  name="D2C_VR_ESWEB_RegressionFlow_OrderTrackingPage">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_RegressionFlow_OrderTrackingPage"/>
+      </classes>
+   </test> 
+   
+    <test  name="D2C_VR_ESWEB_Regressionflow_profilePaga">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_Regressionflow_profilePaga"/>
+      </classes>
+   </test> 
+   
+    <test  name="D2C_VR_ESWEB_RegressionFlow_MenuPage">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_RegressionFlow_MenuPage"/>
+      </classes>
+   </test> 
+   
+    <test  name="D2C_VR_ESWEB_Regressionflow_RestaurantPage">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.D2C_VR_ESWEB_Regressionflow_RestaurantPage"/>
+      </classes>
+   </test> 
+   
+  <!-- For comment the .xml file CTRL_SHIFT_/ -->
+ <!--  <test  name="Locality Page Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.eatsure.sampletest.LocalityPageTest"/>
+      </classes>
+   </test>
+    
+   <test  name="Home Page Test">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.eatsure.sampletest.HomePageTest"/>
+    </classes>
+    
+  </test> Test -->
+</suite> <!-- Suite -->
